@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /**
  * Foundation for Sites by ZURB
- * Version 6.4.1
+ * Version 
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -53,7 +53,7 @@ section {
      * Correct the font size and margin on `h1` elements within `section` and
      * `article` contexts in Chrome, Firefox, and Safari.
      */
-h1, .h1 {
+h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -490,7 +490,8 @@ button {
   border: 0;
   border-radius: 0;
   background: transparent;
-  line-height: 1; }
+  line-height: 1;
+  cursor: auto; }
   [data-whatinput='mouse'] button {
     outline: 0; }
 
@@ -1864,17 +1865,11 @@ ul,
 ol,
 li,
 h1,
-.h1,
 h2,
-.h2,
 h3,
-.h3,
 h4,
-.h4,
 h5,
-.h5,
 h6,
-.h6,
 pre,
 form,
 p,
@@ -1905,16 +1900,11 @@ small {
   line-height: inherit; }
 
 h1, .h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2169,14 +2159,11 @@ ul.no-bullet, ol.no-bullet {
     margin: 0.5cm; }
   p,
   h2,
-  .h2,
-  h3,
-  .h3 {
+  h3 {
     orphans: 3;
     widows: 3; }
-  h2, .h2,
-  h3,
-  .h3 {
+  h2,
+  h3 {
     page-break-after: avoid; }
   .print-break-inside {
     page-break-inside: auto; } }
@@ -3258,6 +3245,11 @@ select {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+  .menu.icon-top a, .menu.icon-right a, .menu.icon-bottom a, .menu.icon-left a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
   .menu.icon-left li a {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -3579,6 +3571,7 @@ select {
   border-top-style: solid;
   border-color: #1779ba transparent transparent;
   right: 5px;
+  left: auto;
   margin-top: -3px; }
 
 .dropdown.menu a {
@@ -3656,6 +3649,7 @@ select {
     border-top-style: solid;
     border-color: #1779ba transparent transparent;
     right: 5px;
+    left: auto;
     margin-top: -3px; }
   .dropdown.menu.medium-vertical > li .is-dropdown-submenu {
     top: 0; }
@@ -3711,6 +3705,7 @@ select {
     border-top-style: solid;
     border-color: #1779ba transparent transparent;
     right: 5px;
+    left: auto;
     margin-top: -3px; }
   .dropdown.menu.large-vertical > li .is-dropdown-submenu {
     top: 0; }
@@ -3760,6 +3755,7 @@ select {
     position: absolute;
     top: 50%;
     right: 5px;
+    left: auto;
     margin-top: -6px; }
   .is-dropdown-submenu-parent.opens-inner > .is-dropdown-submenu {
     top: 100%;
